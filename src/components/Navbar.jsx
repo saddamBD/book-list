@@ -13,12 +13,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white text-center">
       <div className="flex items-center">
         <img src="/src/assets/logo.png" alt="Logo" className="h-8 mr-2" />
         <h1 className="text-lg font-bold">Books Showcase</h1>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 text-center items-center">
         <Link to="/" className="hover:underline">Home</Link>
         <Link to="/products" className="hover:underline">Products</Link>
         {user ? (
