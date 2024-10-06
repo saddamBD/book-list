@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import ProductDetails from "./components/ProductDetails";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Register from "./pages/Register";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <Products />
+                 <Footer />
               </ProtectedRoute>
             } 
           />
@@ -32,7 +34,7 @@ const App = () => {
             path="/products/:id" 
             element={
               <ProtectedRoute>
-                <ProductDetails /> {/* Add route for product details */}
+                <ProductDetails /> 
               </ProtectedRoute>
             } 
           />
