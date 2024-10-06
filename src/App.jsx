@@ -4,6 +4,7 @@ import Products from "./pages/Products";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import ProductDetails from "./components/ProductDetails";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   return (
@@ -12,9 +13,17 @@ const App = () => {
       <div className="container mx-auto p-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
+          
           <Route path="/login" element={<Login />} />
           <Route path="/products/:id" element={<ProductDetails />}
+          />
+          <Route 
+            path="/products" 
+            element={
+              <ProtectedRoute>
+                <Products />
+              </ProtectedRoute>
+            } 
           />
         </Routes>
       </div>
