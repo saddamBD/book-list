@@ -1,8 +1,8 @@
 const ImageSection = () => {
   const images = [
-    { id: 1, src: 'src/assets/img2.jpg', alt: 'Product 1' },
-    { id: 2, src: 'src/assets/img4.jpg', alt: 'Product 2' },
-    { id: 3, src: 'src/assets/img5.jpg', alt: 'Product 3' },
+    { id: 1, src: 'images/img2.jpg', alt: 'Product 1' },
+    { id: 2, src: 'images/img4.jpg', alt: 'Product 2' },
+    { id: 3, src: 'images/img5.jpg', alt: 'Product 3' },
   ];
 
   return (

@@ -3,7 +3,7 @@ const AboutUs = () => {
     <div className="flex flex-col items-center p-8 bg-gray-50">
       <h1 className="text-4xl font-extrabold mb-6 text-blue-700">About Us</h1>
       <img
-        src="src/assets/me.png" 
+        src="images/me.png" 
         alt="Owner"
         className="rounded-full mb-6 shadow-lg"
         height={150}
