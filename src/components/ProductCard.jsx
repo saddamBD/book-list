@@ -2,12 +2,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
-  // Check if the product and img_url exist before rendering
   const imageUrl = product?.img_url || 'https://via.placeholder.com/150'; // Fallback image in case img_url is missing
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-md p-5 hover:shadow-lg transition-shadow duration-200">
-      {/* Render the image with proper alt text */}
       <img
         src={imageUrl}
         alt={product?.title || 'Product Image'} // Add fallback alt text
